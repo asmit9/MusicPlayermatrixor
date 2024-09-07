@@ -27,7 +27,7 @@ class Config:
     def __init__(self) -> None:
         self.API_ID: str = os.environ.get("API_ID", "27896987")
         self.API_HASH: str = os.environ.get("API_HASH", "0e017f716c49a52a0ba4a8bfa95ccaf7")
-        self.SESSION: str = os.environ.get("SESSION", "BQGprJsAbiylno94JMpniyLv-T7g-DBRrgquKU-MRiGeVvjBI1soY2k7hfT-fdAQTIEGvluCHMXdmGMTVsTNpNkWrwSrZjuodfVw5mTrbL5332ALoj3jlz-shHbnGy10nVdv768j_SZ2qSbigawZP9G2BJmGA42pesuMIrWLaDcOdS5Pj1E3BQKnf_cpeytkOLwk-Vk7Qg-B49I871I46V4WK0jVA8USdzdfg7m47H8SIqLKpkGbOH-vHAVLByekaHYzOPhytDak4i3o3FOl6vMgkyIaDRtFYrFI6DTZ6HjGk3QzCZUaSBDfnWGJpGIxYTIigkndzIAKsCOD-CLEscvEKAAAAAGlQmcFAA")
+        self.SESSION: str = os.environ.get("SESSION", "BQGprJsAl7gjmqqRdKe42rB32woDlcb2szum2grohg6FFZcorgUjOZflu9w8OwmpmPDXRcqdna5k1YcWOLXmTgWLZ-xVGaOK-7z4mZ93S532_V1TFYCs1hciZgTvA4p7r5zzh4_0wIGSfpKZZ5dmfAADFOYGovJYnWww2gsO_9rdjRgbwrELzKyqsPYrYD8ZpND3QS9OLKJwHpHO6Bfo7lce5SZymwZnLV4kcywu0Fsz61nDj7rQ65RxMkhFt8OXqraQfnVhC4VNe1MMJkv21p6oS2JR5N9ykNZU__5a1u5_gNxLhwhI5mj4CDGtim91Vktv1kdX5oC691r3OiOKtHX6bgu53wAAAAGlQmcFAA")
         self.BOT_TOKEN: str = os.environ.get("BOT_TOKEN", "7223926558:AAH-0Z2AIcyI6W3g8F-SuV06gBMzc07G_xM")
         self.SUDOERS: list = [
             int(id) for id in os.environ.get("SUDOERS", " ").split() if id.isnumeric()
