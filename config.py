@@ -25,10 +25,10 @@ load_dotenv()
 
 class Config:
     def __init__(self) -> None:
-        self.API_ID: str = os.environ.get("API_ID", "27896987")
-        self.API_HASH: str = os.environ.get("API_HASH", "0e017f716c49a52a0ba4a8bfa95ccaf7")
-        self.SESSION: str = os.environ.get("SESSION", "BQGprJsAl7gjmqqRdKe42rB32woDlcb2szum2grohg6FFZcorgUjOZflu9w8OwmpmPDXRcqdna5k1YcWOLXmTgWLZ-xVGaOK-7z4mZ93S532_V1TFYCs1hciZgTvA4p7r5zzh4_0wIGSfpKZZ5dmfAADFOYGovJYnWww2gsO_9rdjRgbwrELzKyqsPYrYD8ZpND3QS9OLKJwHpHO6Bfo7lce5SZymwZnLV4kcywu0Fsz61nDj7rQ65RxMkhFt8OXqraQfnVhC4VNe1MMJkv21p6oS2JR5N9ykNZU__5a1u5_gNxLhwhI5mj4CDGtim91Vktv1kdX5oC691r3OiOKtHX6bgu53wAAAAGlQmcFAA")
-        self.BOT_TOKEN: str = os.environ.get("BOT_TOKEN", "7223926558:AAH-0Z2AIcyI6W3g8F-SuV06gBMzc07G_xM")
+        self.API_ID: str = os.environ.get("API_ID", "27956216")
+        self.API_HASH: str = os.environ.get("API_HASH", "7e79fca1cf1c9974dd623753fd5d2102")
+        self.SESSION: str = os.environ.get("SESSION", "BQGqk_gAqQ8NCicSRJ40wIHI0gp_0gIdpGtHU3HIVsTF-NI4nz6td518qZqhDDE5pwm9QAIBRshfFuc3UjApnT5Hx80yle2ouTFASXO4uDMCWwsI1FdclekDf21D_-9wA_ex_uGXcbJriPF3-aGejTJPes0MwpbiVbDthhCpaMDJSjpnABH6y2sz8Sv-ldaB3f4itdvEteXA8rsOyh6lXzBoMbwqBjt68NPCPxgFZJim2NshdxvEOHKtsnUxAmVmGQgyJo1oCVrWFA_VzfYcV00KP1cLlVQjbpxABstg4Hex1Vwpnh1I0pm_zmzxheVsjBm5tJV98EKkVwOxYe-OJrcd1oCuOwAAAAHJJpY5AA")
+        self.BOT_TOKEN: str = os.environ.get("BOT_TOKEN", "7356074420:AAHnSu5Cx2r8CyJDY51Zo03g-1mi5Vtap0M")
         self.SUDOERS: list = [
             int(id) for id in os.environ.get("SUDOERS", " ").split() if id.isnumeric()
         ]
@@ -37,7 +37,7 @@ class Config:
             quit(0)
         self.SPOTIFY: bool = False
         self.QUALITY: str = os.environ.get("QUALITY", "high").lower()
-        self.PREFIXES: list = os.environ.get("PREFIX", "!").split()
+        self.PREFIXES: list = os.environ.get("PREFIX", "/").split()
         self.LANGUAGE: str = os.environ.get("LANGUAGE", "en").lower()
         self.STREAM_MODE: str = (
             "audio"
